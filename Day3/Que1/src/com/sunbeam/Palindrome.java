@@ -1,5 +1,7 @@
 package com.sunbeam;
 
+import java.util.Stack;
+
 public class Palindrome {
 	
 	public static boolean usingTwoPointer(String s){
@@ -31,7 +33,7 @@ public class Palindrome {
 	}
 	
 	public static boolean usingStack(String s){
-	    java.util.Stack<Character> st = new java.util.Stack<>();
+	    Stack<Character> st = new Stack<>();
 	    for(char c : s.toCharArray()) st.push(c);
 
 	    for(char c : s.toCharArray()){
